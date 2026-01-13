@@ -1,0 +1,20 @@
+/* This forces the scrollbar to be visible and styled regardless of the plugin */
+.overflow-y-auto::-webkit-scrollbar {
+  width: 8px; /* Width of the vertical scrollbar */
+  display: block !important;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: transparent; /* scrollbar-track-black */
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background: #71717a; /* zinc-500 */
+  border-radius: 10px;
+}
+
+/* For Firefox */
+.overflow-y-auto {
+  scrollbar-width: thin;
+  scrollbar-color: #71717a transparent;
+}
